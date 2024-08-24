@@ -64,6 +64,10 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+html{
+    scroll-behavior: smooth; /* YAVAŞÇA GEÇİŞİ SAĞLAR */
+}
+
 :focus {
   /* BU KOD NEYİ SAĞLADI? */
   outline: 3px solid var(--clr-accent);
@@ -205,15 +209,18 @@ header {
     transform: translateX(0);
 }
 
-.nav-open .hamburger {  /* BU KOD NEDİR? */
+.nav-open .nav-toggle{
+    position: fixed;
+}
+.nav-open .hamburger {  /* Animasyon ile ilgili kodlar */
     transform: rotate(0.625turn);
   }
   
-  .nav-open .hamburger::before {   /* BU KOD NEDİR? */
+  .nav-open .hamburger::before {   /* Animasyon ile ilgili kodlar */
     transform: rotate(90deg) translateX(-6px);
   }
   
-  .nav-open .hamburger::after {    /* BU KOD NEDİR? */
+  .nav-open .hamburger::after {    /* Animasyon ile ilgili kodlar */
     opacity: 0;
   }
 
